@@ -4,7 +4,7 @@ Formation : https://www.udemy.com/course/formation-complete-python/?couponCode=K
 De **Thibault Houdon** <br>
 Projet N°3 formation Udemy Python, la **Liste de course**
 
-## Etape I
+## Etape I (Branche "stepOne") ✓
 
 Créer une liste de course sans sauvegarde et en ligne de commande :
 
