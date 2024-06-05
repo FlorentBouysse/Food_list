@@ -23,13 +23,12 @@ shopping_list = [];
 # create folder with condition for check if folder exist or not
 name_folder = "list";
 name_file = "list.json";
-# folder = os.path.join(way, name_folder); Ce que j'avais fait
-folder = os.path.join(way, name_folder, name_file);
+folder = os.path.join(way, name_folder);
 
 if not os.path.exists(folder):
      os.makedirs(folder);
 else:
-    with open(f"{way}\{name_folder}", "r") as f:
+    with open(f"{way}\{name_folder}\{name_file}", "r") as f:
         shopping_list = json.load(f);
     print("Dossier déjà existant");
 
@@ -45,21 +44,21 @@ while True:
         case "1":
             product = input("Ajoutez le produit : ");
             shopping_list.append(product);
-            with open(f"{way}\{name_folder}", "w") as f:
+            with open(f"{way}\{name_folder}\{name_file}", "w") as f:
                 json.dump(shopping_list, f, indent=4);
             print(f"{product} à bien été ajouté !")
         case "2":
             product = input("Supprimez le produit : ");
             if product in shopping_list:
                 shopping_list.remove(product);
-                with open(f"{way}\{name_folder}", "w") as f:
+                with open(f"{way}\{name_folder}\{name_file}", "w") as f:
                     json.dump(shopping_list, f, indent=4);
                 print(f"{product} à bien été supprimé !");
             else:
                 print(f"le produit {product} n'existe pas ! ");
         case "3":
             if shopping_list:
-                with open(f"{way}\{name_folder}", "r") as f:
+                with open(f"{way}\{name_folder}\{name_file}", "r") as f:
                     data = json.load(f);
                     print(data);
                 # for i, item in list:
@@ -68,7 +67,7 @@ while True:
                 print("Cette liste est vide");
         case "4":
             shopping_list.clear();
-            with open(f"{way}\{name_folder}", "w") as f:
+            with open(f"{way}\{name_folder}\{name_file}", "w") as f:
                 json.dump(shopping_list, f, indent=4);
             print("Votre liste à bien été vidé !")
         case "5":
