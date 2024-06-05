@@ -18,3 +18,8 @@ Consigne :
 > Tu dois donc demander à l'utilisateur de choisir parmi une de ces action en entrant un nombre de 1 à 5. <br>Tu dois gérer le cas de figure où l'utilisateur ne rentre pas un nombre compris entre 1 et 5 ou s'il rentre par exemple des lettres ou un autre symbole invalide. Dans ce cas, tu dois afficher de nouveau le menu avec les options disponibles, jusqu'à ce que l'utilisateur choisisse une option valide.
 
 Note : Les fonctions n'ont pas été abordé sur cette étape
+
+
+## Etape II (Branche "stepTwo")
+
+Sauvegarder la liste de course dans un fichier JSON

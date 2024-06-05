@@ -1,3 +1,5 @@
+
+
 # TODO : Create selection for add, remove, view, clear list and exit
 # TODO : Create elements for add
 # TODO : Create elements for remove
