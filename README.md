@@ -20,6 +20,8 @@ Consigne :
 Note : Les fonctions n'ont pas été abordé sur cette étape
 
 
-## Etape II (Branche "stepTwo")
+## Etape II (Branche "stepTwo") ✓
 
-Sauvegarder la liste de course dans un fichier JSON
+Sauvegarder la liste de course dans un fichier JSON <br><br>
+
+Ici j'ai codé le fait de créer un dossier et ensuite un fichier JSON, puis j'ai adapté le code précédant pour mettre à jour le fichier JSON
